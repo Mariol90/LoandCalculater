@@ -48,5 +48,6 @@ function calculateMonthlyPayment(values) {
 // Given a string representing the monthly payment value,
 // update the UI to show the value.
 function updateMonthly(monthly) {
- 
+  var finalMonthpay= document.getElementById('monthly-payment')
+  finalMonthpay.innerText='$' +monthly;
 }
