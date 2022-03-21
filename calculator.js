@@ -40,7 +40,8 @@ function update() {
 // calculate the monthly payment.  The output should be a string
 // that always has 2 decimal places.
 function calculateMonthlyPayment(values) {
-  
+  var finalMonthpay= document.getElementById('monthly-payment')
+  finalMonthpay.innerText='$' +monthly; 
 }
 
 // Given a string representing the monthly payment value,
