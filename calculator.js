@@ -35,6 +35,8 @@ update();
 // Get the current values from the UI
 // Update the monthly payment
 function update() {
+  const currentUserValues = getCurrentUIValues();
+  updateMonthly(calculateMonthlyPayment(currentUserValues));
 }
 // Given an object of values (a value has amount, years and rate ),
 // calculate the monthly payment.  The output should be a string
